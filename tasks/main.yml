@@ -1,0 +1,19 @@
+---
+- name: install httplib2
+  pip:
+    name: httplib2
+
+- name: Placing key
+  authorized_key:
+    user: root
+    key: "{{ lookup('file', '{{ ssh_keys_local_path }}/{{ item }}.pub') }}"
+  with_items: "{{ ssh_keys_usernames_add }}"
+  when: "ssh_keys_usernames_add | count > 0"
+
+- name: Removing key
+  authorized_key:
+    user: root
+    key: "{{ lookup('file', '{{ ssh_keys_local_path }}/{{ item }}.pub') }}"
+    state: absent
+  with_items: "{{ ssh_keys_usernames_del }}"
+  when: "ssh_keys_usernames_del | count > 0"

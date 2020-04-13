@@ -1,0 +1,7 @@
+---
+ssh_keys_local_path: "ssh-keys"
+
+ssh_keys_usernames_add:
+  - example
+
+ssh_keys_usernames_del: []
