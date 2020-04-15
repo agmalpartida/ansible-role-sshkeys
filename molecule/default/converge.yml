@@ -13,4 +13,4 @@
         name: example
 
   roles:
-    - role: agmalpartida.ssh-keys-add
+    - role: ansible-role-sshkeys
