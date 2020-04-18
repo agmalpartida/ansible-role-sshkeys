@@ -1,6 +1,6 @@
 # Ansible Role: ssh-keys-add
 
-[![Build Status](https://api.travis-ci.com/agmalpartida/ssh-keys-add.svg?branch=master)](https://travis-ci.com/github/agmalpartida/ssh-keys-add)
+[![Build Status](https://api.travis-ci.com/agmalpartida/ansible-role-sshkeys.svg?branch=master)](https://travis-ci.com/github/agmalpartida/ansible-role-sshkeys)
 
 Given a list of usernames, this Ansible role upload their SSH public keys and adds them to ~/.ssh/authorized_keys
 
