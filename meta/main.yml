@@ -2,6 +2,7 @@
 dependencies: []
 
 galaxy_info:
+  role_name: sshkeys
   author: agmalpartida
   description: >
     Given a list of usernames, this Ansible role upload their
